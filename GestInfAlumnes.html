@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GestInf - Alumne</title>
+  <style>
+    /* Estilos CSS para el encabezado */
+    header {
+      background-color: #9ee060;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .user-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #9ee060;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logout-menu {
+      position: absolute;
+      background-color: #9ee060;
+      padding: 10px;
+      display: none;
+    }
+
+    .logout-menu a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .logout-menu a:hover {
+      background-color: #9ee060;
+    }
+
+    .imatge-icono {
+        width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+
+    }
+
+    .titol {
+    text-align:center;
+    text-decoration: underline;
+    font-size: xx-large;
+
+
+    }
+    
+    .taula {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="user-icon">
+      <img class = "imatge-icono" src = "C:\Users\kevin\Desktop\ASIX\M08\Ultim Cas\LoginIcon.jpg"></div>
+      <span>Nom d'usuari</span>
+    </div>
+
+    <div class="titol"> <strong>GestInf - Alumnes</strong>
+      </div>
+
+    <div>
+      <div class="logout-menu">
+        <a href="logout.php">Tancar Sessió</a>
+      </div>
+      <button onclick="toggleLogoutMenu()">Menú</button>
+    </div>
+  </header>
+    <br>
+    <br>
+    <br>
+<table class = "taula">
+    <tr>
+      <th>Estat del ordinador</th>
+      <th>Estat del disc</th>
+    </tr>
+
+  <script>
+    // Función para mostrar/ocultar el menú desplegable
+    function toggleLogoutMenu() {
+      var logoutMenu = document.querySelector('.logout-menu');
+      logoutMenu.style.display = logoutMenu.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
